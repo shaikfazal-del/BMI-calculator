@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" target="_blank"><img width="50" height="50"
+                    src="https://img.icons8.com/color/48/bmi.png" alt="bmi" /></a>
+            <h1><span id="color1">BMI</span> <span id="color2">calculator</span></h1>
+        </nav>
+    </header>
+    <section>
+        <div class="cal">
+            <form onsubmit="event.preventDefault();">
+                <div class="height padding">
+                    <label style="color: blue;" for="height">Height :</label>
+                    <input type="number" placeholder="ht in cm's" id="height">
+                </div>
+                <div class="weight padding">
+                    <label style="color: red;" for="weight">weight :</label>
+                    <input type="number" placeholder="wt in kg's" id="weight">
+                </div>
+                <div class="btn padding">
+                    <button id="btn" onclick="bmi()">BMI</button>
+                </div>
+                <div class="bmival padding">
+                    <p style="color:indianred;">Your BMI is :</p>
+                    <p class="val">0</p>
+                </div>
+                <div class="showinfo padding">
+                    <p></p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="logic.js"></script>
+</body>
+
+</html>
