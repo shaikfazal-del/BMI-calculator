@@ -16,7 +16,7 @@ This is a simple BMI (Body Mass Index) calculator web application. It allows use
 
 You can see a live demo of the BMI calculator [here](#).
 
-[![BMI Calculator Demo](demo-screenshot.png)](#)
+[[BMI Calculator Demo](demo-screenshot.png)](#)
 
 ## Features
 
