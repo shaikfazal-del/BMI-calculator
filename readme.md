@@ -11,7 +11,7 @@ This is a simple BMI (Body Mass Index) calculator web application. It allows use
 
 ## Demo
 
-You can see a live demo of the BMI calculator [here](#).
+You can see a live demo of the BMI calculator [here](https://shaikfazal-del.github.io/BMI-calculator/)(#).
 
 [[BMI Calculator Demo](BMIcalculator.png)](#)
 
