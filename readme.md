@@ -23,6 +23,6 @@ You can see a live demo of the BMI calculator [here](#).
 - Responsive design for a seamless experience on various devices.
 
  ## Technologies Used
-=>HTML
-=>CSS
-=>JavaScript
+- HTML
+- CSS
+- JavaScript
