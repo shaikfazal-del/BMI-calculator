@@ -9,8 +9,73 @@ nav {
     line-height:2.5em;
     padding: 20px;
     font-size: 1.5rem;
+    background-color:rgb(147, 195, 190);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 3rem;
+    margin: 0.5rem auto;
+    border-radius: 1.8rem;
+    animation: changecolor 1s infinite ease-in-out;
+    font-size: 1.3rem;
     background-color: black;
 }
+fieldset {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    margin: 1rem 2rem;
+    padding: 0.7rem;
+}
+.con {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius:0.4rem;
+    background-color:rgb(165, 173, 231);
+    color:blue;
+}
+.feetconvter,.meterconverter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 0.5rem;
+    color: rgb(249, 82, 146);
+    font-size: 1.5rem;
+}
+.feetconvter input ,.meterconverter input {
+    width: 7rem;
+    outline: none;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+#btn1,#btn2 {
+    width: 10rem;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+
+legend {
+    animation: changecolor 1.5s infinite ease-in-out;
+}
+
+.feetconvter h2, .meterconverter h2 {
+    animation: changecolor 1s infinite ease-in-out;
+}
+
 #color1 {
     color: red;
 }
@@ -27,19 +92,31 @@ nav {
     align-items: center;
     padding: 50px;
     font-size: 1.7rem;
-
 }
-input {
+#height,#weight {
     padding: 5px;
     outline: none;
     font-size: 1.4rem;
     border-radius: 7px;
+}
+#height:focus,#weight:focus {
+    outline:thick double green;
 }
 .padding {
     padding: 30px;
 }
 
 #btn {
+    padding: 5px;
+    align-self: center;
+    width: 100px;
+    position: relative;
+    left: 195px;
+    color: red;
+    border-radius: 5px;
+    outline:none;
+}
+#clear {
     padding: 5px;
     align-self: center;
     width: 100px;
@@ -59,9 +136,174 @@ input {
     padding: 0.5rem;
     text-align: center;
 }
+
+.tips{
+    font-style: oblique;
+    font-weight: bolder;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1.5rem auto;
+    border-radius: 0.7rem;
+}
+.line {
+    height: 1rem;
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+}
+#heading{
+    text-align: center;
+    padding: 1rem;
+    color: blueviolet;
+    font-weight: bolder;
+    font-style: oblique;
+    
+    
+}
+.table {
+    margin: 3rem auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+th,td {
+    padding: 0.6rem;
+    border: 0.1rem solid  ;
+    background-color: rgb(189, 188, 188);
+    font-size: medium;
+}
+.chart h2 {
+    color: red;
+}
+.chart {
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: blue;
+}
+#credits {
+    text-align: center;
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: bolder;
+}
+li{
+    text-decoration: none;
+    list-style:none;
+}
+.fa-instagram {
+    margin: 20px;
+}
+.fa-facebook {
+    margin: 20px;
+}
+.fa-youtube {
+    margin: 20px;
+}
+.fa-twitter {
+    margin: 20px;
+}
+.fa-github {
+    margin: 20px;
+}
+.fa-linkedin {
+    margin: 20px;
+}
+a i{
+    color: #777;
+    transform: translateY(2px);
+}
+a:hover .fa-instagram {
+    color:#f14843;
+}
+a:hover .fa-youtube {
+    color:#f00;
+}
+a:hover .fa-github {
+    color:#171515;
+}
+a:hover .fa-twitter {
+    color:#00acee;
+}
+a:hover .fa-linkedin {
+    color:#0A66c2;
+}
+a:hover .fa-facebook {
+    color:#3b5998;
+}
+a:hover .fa-facebook {
+    color:#3b5998;
+}
+.flex2 {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+footer {
+    background-color:black;
+    color: gray;
+    text-align: center;
+}
+
 @media only screen and (max-width:667px) {
     #btn{
         position: relative;
-        left: 100px;
+        left: 98px;
+    }
+    #clear {
+        position: relative;
+        left: 98px;
+    }
+    .table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    th,td {
+        padding: 0.2rem;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:black;
+        height: 3.9rem;
+        margin: 0.5rem auto;
+        font-size: 0.9rem;
+        border-radius: 0.9rem;
+        padding: 0.5rem;
+    }
+    .chart img {
+        height: 20rem;
+        width: 20rem;
+    }
+    .flex2 {
+        display: flex;
+        flex-direction: row;
     }
 }
+@keyframes changecolor {
+    0% {
+        color:crimson;
+    }
+    25%{
+        color:brown;
+    }
+    50% {
+        color:rgb(224, 99, 120);
+    }
+    75% {
+        color: green;
+    }
+    100%{
+        color:rgb(132, 4, 236)
+    }
+}
+
