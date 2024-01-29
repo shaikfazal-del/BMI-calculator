@@ -7,6 +7,7 @@
     <title>BMI calculator</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,18 +19,40 @@
         </nav>
     </header>
     <section>
+        <div class="flex">
+            <div class="para">
+                <p>
+                    Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men
+                    and women. use the tool below to compute yours.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <fieldset>
+                <legend>converters</legend>
+                <div class="link1">
+                    <a href="#converter1" class="con">Feet's to cm's</a>
+                </div>
+                <div class="link2">
+                    <a href="#converter2" class="con">Meter's to cm's</a>
+                </div>
+            </fieldset>
+        </div>
         <div class="cal">
             <form onsubmit="event.preventDefault();">
                 <div class="height padding">
                     <label style="color: blue;" for="height">Height :</label>
-                    <input type="number" placeholder="ht in cm's" id="height">
+                    <input type="text" placeholder="ht in cm's" id="height">
+                    <span>(Height in cm's)</span>
                 </div>
                 <div class="weight padding">
                     <label style="color: red;" for="weight">weight :</label>
-                    <input type="number" placeholder="wt in kg's" id="weight">
+                    <input type="text" placeholder="wt in kg's" id="weight">
+                    <span>(weight in kg's)</span>
                 </div>
                 <div class="btn padding">
                     <button id="btn" onclick="bmi()">BMI</button>
+                    <button id="clear" onclick="nothing()">clear</button>
                 </div>
                 <div class="bmival padding">
                     <p style="color:indianred;">Your BMI is :</p>
@@ -40,7 +63,109 @@
                 </div>
             </form>
         </div>
+        <div class="tips"></div>
+        <div class="line"></div>
+        <div class="table">
+            <table style="border-collapse: collapse;" border="1" cellpadding="2px">
+                <h1 id="heading">
+                    BMI, basic categories
+                </h1>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th> BMI (kg/m2)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Underweight (Severe thinness)</td>
+                        <td>&gt;16.0</td>
+                    </tr>
+                    <tr>
+                        <td>Underweight (Moderate thinness)</td>
+                        <td>16.0 – 16.9</td>
+                    </tr>
+                    <tr>
+                        <td>Underweight (Mild thinness)</td>
+                        <td>17.0 – 18.4</td>
+                    </tr>
+                    <tr>
+                        <td>Normal range</td>
+                        <td>18.5 – 24.9</td>
+                    </tr>
+                    <tr>
+                        <td>Overweight (Pre-obese)</td>
+                        <td>25.0 – 29.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obese (Class I)</td>
+                        <td>30.0 – 34.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obese (Class II)</td>
+                        <td>35.0 – 39.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obese (Class III)</td>
+                        <td>&ge;40.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="line"></div>
+        <div class="chart">
+            <h2>BMI chart for adults</h2>
+            <p>This is a graph of BMI categories based on the World Health Organization data. The dashed lines represent
+                subdivisions within a major categorization.</p>
+            <img src="bmi-chart.gif" alt="">
+        </div>
+        <div class="line"></div>
+        <div class="feetconvter" id="converter1">
+            <h2>Feet's to Cm's</h2>
+            <label for="height">Height</label>
+            <input type="text" name="height" id="feet"><span>(in feets)</span>
+            <button id="btn1" onclick="feet_cm()">convert</button>
+            <button id="btn1" onclick="nothing2()">clear</button>
+            <p id="output1">0</p>
+        </div>
+        <div class="line"></div>
+        <div class="meterconverter" id="converter2">
+            <h2>Meter's to Cm's</h2>
+            <label for="height">Height</label>
+            <input type="text" name="height" id="meter"><span>(in Meters)</span>
+            <button id="btn2" onclick="meter_cm()">convert</button>
+            <button id="btn2" onclick="nothing2()">clear</button>
+            <p id="output2">0</p>
+        </div>
+        <p id="credits">The reference data in this site is taken from<a
+                href="https://www.calculator.net/bmi-calculator.html" target="_blank">calculator.net</a></p>
     </section>
+    <footer>
+        <div class="flex2">
+            <div class="logo">
+                <h1><span id="color1">BMI</span> <span id="color2">calculator</span></h1>
+            </div>
+            <div class="followus">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/___.fazal.___/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    <li><a href="https://twitter.com/ShaikFazal9392" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://github.com/shaikfazal-del" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/shaik-fazal-133309297/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="coyright">
+            <p>This website is designed&developed by Fazal<a href="https://www.instagram.com/___.fazal.___/"><i
+                        class="fab fa-instagram"></i></a></p>
+        </div>
+    </footer>
+
     <script src="logic.js"></script>
 </body>
 
