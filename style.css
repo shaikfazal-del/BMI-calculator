@@ -11,7 +11,9 @@ nav {
     font-size: 1.5rem;
     background-color:rgb(147, 195, 190);
 }
-
+body {
+    background-color: plum;
+}
 .flex{
     display: flex;
     justify-content: center;
@@ -48,7 +50,7 @@ fieldset {
     flex-direction: column;
     margin: 2rem auto;
     gap: 0.5rem;
-    color: rgb(249, 82, 146);
+    color:red;
     font-size: 1.5rem;
 }
 .feetconvter input ,.meterconverter input {
@@ -154,7 +156,7 @@ legend {
 #heading{
     text-align: center;
     padding: 1rem;
-    color: blueviolet;
+    color:red;
     font-weight: bolder;
     font-style: oblique;
     
@@ -185,6 +187,10 @@ th,td {
     flex-direction: column;
     gap: 1.5rem;
     color: blue;
+}
+
+#output1,#output2 {
+    background-color: black;
 }
 #credits {
     text-align: center;
