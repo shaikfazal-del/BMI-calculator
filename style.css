@@ -38,7 +38,7 @@ fieldset {
 }
 .con {
     text-decoration: none;
-    border: 2px solid black;
+    
     border-radius:0.4rem;
     background-color:rgb(165, 173, 231);
     color:blue;
@@ -48,7 +48,7 @@ fieldset {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2rem auto;
+    margin: 2rem 1rem;
     gap: 0.5rem;
     color:red;
     font-size: 1.5rem;
